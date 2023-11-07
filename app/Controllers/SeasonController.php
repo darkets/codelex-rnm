@@ -37,7 +37,7 @@ class SeasonController
             'seasons/show',
             [
                 'episodes' => $this->api->fetchEpisodesBySeasonId($id)->get(),
-                'header' => 'Seasons'
+                'header' => 'Episodes'
             ]
         );
     }

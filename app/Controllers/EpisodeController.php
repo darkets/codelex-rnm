@@ -35,7 +35,7 @@ class EpisodeController
         $episode = $this->api->fetchEpisode($id);
 
         return new Response('episodes/show', [
-            'episode' => $episode
+            'episode' => $episode,
         ]);
     }
 }
